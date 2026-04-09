@@ -9,7 +9,7 @@ class Solution {
         int f2=1;
         int mod=1234567;
         for (int i=2;i<n+1;i++){
-            result=((f1%mod)+(f2%mod))%mod;
+            result=(f1+f2)%mod;
             f1=f2;
             f2=result;
         }
